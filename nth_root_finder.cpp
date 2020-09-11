@@ -68,6 +68,14 @@ string FindNthRoot(int number, int root, int precision) {
         }
     }
   }
+string modifiedOutput = std::to_string(baseNumber);
 
-return std::to_string(baseNumber);
+if(precision == 0){
+
+  modifiedOutput.resize(precision + 1);
+
+}
+modifiedOutput.resize(precision + 2);
+
+return modifiedOutput;
 }
