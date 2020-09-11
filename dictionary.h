@@ -1,5 +1,10 @@
 #ifndef DICTIONARY_H
 #define DICTIONARY_H
+#include <iostream>
+#include <string>
+using namespace std;
+
+//After reading Alex's post about how implementing 'using namespace std;' is bad practice, I revised a lot of my code.
 
 int MinWordLength(string words[], int length);
 

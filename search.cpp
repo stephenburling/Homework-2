@@ -1,8 +1,18 @@
+/*
+LinearSearch(array, length of array, number to search)
+for every number starting from zero and to the end of the array: 
+  if the number to search for is in the index of the given array slot:
+  return the index of the number in the array.
+else, return -1.
+
+BinarySearch(array, length of array, number to search)
+Initilialize the ceiling bound to the length of the array minus one
+Initilialize the floor bound to 0
+While there are still
+*/
 int LinearSearch(int list[], int arrayLength, int number) {
-	
 	for (int i = 0; i < arrayLength; i++) {
 		if (number == list[i]) {
-			;
 			return i;
 		}
 	}
