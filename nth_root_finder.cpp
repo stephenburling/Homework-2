@@ -45,7 +45,7 @@ string FindNthRoot(int number, int root, int precision) {
   //The object of this for loop is to keep the program going until it reaches the precision 
   //that the user wants. It will already have the number the first round, however it will add more digits
   //with more iterations with greater specificity
-  for(int i = 1; i <= precision; i++){
+  for(int i = 0; i <= precision; i++){
     for(int j = 0; j < 10; j++){
 
       originalBaseNumber = baseNumber;
