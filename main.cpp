@@ -1,8 +1,6 @@
 #include <iostream>
 #include <string>
 #include "dictionary.h"
-using namespace std;
-
 
 using std::string;
 using std::cout;
@@ -10,13 +8,9 @@ using std::endl;
 
 int main() {
 
-	string list[10] = {"hlssfl", "ffsft", "ssfefr", "rsssrff", "tffffffp", "sfffs", "lffd", "wisr", "ssng", "dry"};
+	string list[10] = {"sfl", "sft", "efr", "rsssrff", "tffffffp", "sfs", "lfd", "wisfr", "ssng", "dry"};
 
 	int array_length = 10;
-
-	for (int i = 0; i < array_length; i++) {
-		cout << list[i] << endl;
-	}
 
 	cout << "Shortest word length is: "<<MinWordLength(list, array_length) << endl;
 
