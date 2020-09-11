@@ -11,7 +11,7 @@ string FindNthRoot(int number, int root, int precision) {
   double baseNumberPowered = 0;
   double originalBaseNumber = 0;
   double baseNumber = 0;
-  double BNM = 10;
+  double BNM = 1;
   cout << "Number is: " << number << endl;
   cout << "Root is: " << root << endl;
   cout << "BNM is: " << BNM << endl;
@@ -23,14 +23,16 @@ string FindNthRoot(int number, int root, int precision) {
 
       originalBaseNumber = baseNumber;
       baseNumber = baseNumber + BNM;
+      baseNumberPowered = baseNumber;
       cout << "base number plus the BNM is now: " << baseNumber << endl;
         for(int k = 0; k < root; k++){
-          baseNumberPowered = (baseNumber * baseNumber);
+          baseNumberPowered = (baseNumberPowered * baseNumberPowered);
           cout << "base number has been powered to " << baseNumberPowered << endl;
         }
       if(baseNumberPowered == number){
         cout << "This number: " << baseNumberPowered << " is equal to the number: " << number << endl;
       }else if(baseNumberPowered > number){
+        
           cout << "This number is too much: " << baseNumberPowered << endl;
           cout << "Setting base number back to " << originalBaseNumber <<endl;
           baseNumber = originalBaseNumber;
